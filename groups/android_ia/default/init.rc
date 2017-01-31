@@ -29,7 +29,7 @@ on boot
     chown system system /sys/class/tty/ttyHSU1/../../power/control
     mkdir /dev/gps 0770 gps system
     symlink /dev/ttyHSU1 /dev/gps/ttyGPS
-    symlink /sys/class/tty/ttyHSU1/../../power/control /dev/gps/ttyGPSPowerControl
+    symlink /sys/class/tty/ttyHSU1/../../power/control /dev/gps/ttyGPSPowerCont
 
     write /proc/sys/net/ipv4/tcp_limit_output_bytes 1500000
     write /proc/sys/net/core/rmem_max 6291456
